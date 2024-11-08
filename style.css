@@ -67,4 +67,24 @@
     color: #555;
     font-size: 0.8em;
   }
+
+/* collapsible animation for sections */
   
+.collapsible {
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .collapsible.expanded {
+    padding: 15px;
+  }
+  
+  .content {
+    display: none; /* Nasconde il contenuto inizialmente */
+  }
+  
+  .collapsible.expanded .content {
+    display: block;
+  }
