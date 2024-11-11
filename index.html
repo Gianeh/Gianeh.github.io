@@ -18,7 +18,7 @@
   
   <nav>
     <ul>
-      <li><a href="#aboutme">About me</a></li>
+      <li><a href="/pages/about_me.html">About me</a></li>
       <li><a href="#teaching">Personal takes on stuff</a></li>
       <li><a href="#resources">Resources I like</a></li>
     </ul>
@@ -54,6 +54,8 @@
     <div class="content" data-file="wip.md"></div>
   </section>
 
+  <br>
+  <br>
   <!-- Send me an email message box-->
   <section id="contact">
     <h2>Contact Me</h2>
@@ -83,40 +85,15 @@
     </form>
   
     <!-- Nerd Mode Terminal -->
-    <div id="nerd-mode" class="terminal" style="display: none;">
-      <div class="terminal-output" id="output">
-        <p>Type "help" to see a list of commands.</p>
-      </div>
-      <input type="text" id="terminal-input" placeholder=">>">
+  <div id="nerd-mode" class="terminal" style="display: none;">
+    <div class="terminal-output" id="output">
+      <p>Type "help" to see a list of commands.</p>
     </div>
-    <script>
-      const input = document.getElementById('terminal-input');
-      const placeholder = '>>';
-    
-      input.addEventListener('focus', () => {
-        if (!input.value.startsWith(placeholder)) {
-          input.value = placeholder;
-        }
-      });
-    
-      input.addEventListener('input', (event) => {
-        if (!event.target.value.startsWith(placeholder)) {
-          event.target.value = placeholder + event.target.value.replace(placeholder, '');
-        }
-      });
-    
-      input.addEventListener('keydown', (event) => {
-        if (event.key === 'Backspace' && input.selectionStart <= placeholder.length) {
-          event.preventDefault();
-        }
-      });
-    
-      input.addEventListener('click', () => {
-        if (input.selectionStart < placeholder.length) {
-          input.setSelectionRange(placeholder.length, placeholder.length);
-        }
-      });
-    </script>
+    <div style="display: flex; align-items: center;">
+      <span id="placeholder">>></span>
+      <input type="text" id="terminal-input">
+    </div>
+  </div>
   </section>
 
   <br>

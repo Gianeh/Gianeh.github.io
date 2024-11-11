@@ -1,19 +1,25 @@
 // Scripts of the index page
 
-// A function to expand sections on demand
-// An id indexed dictionary to store initial heights of sections
+// Dizionario per salvare le altezze iniziali delle sezioni
 const initialHeights = {};
+
 document.querySelectorAll('.collapsible').forEach(section => {
     initialHeights[section.id] = section.scrollHeight + "px";
     section.addEventListener('click', async () => {
         const contentDiv = section.querySelector('.content');
 
-        // Account for the already expanded height of the section (preview of the content)
         const initialHeight = initialHeights[section.id];
   
         if (!section.classList.contains('expanded')) {
+            // Espansione della section
             section.classList.add('expanded');
-  
+            section.style.height = initialHeight; // Altezza chiusa temporanea
+            
+            // Nascondi il contenuto prima dell'espansione
+            contentDiv.style.opacity = 0;
+            contentDiv.style.display = "none"; 
+
+            // Carica il file
             const filePath = contentDiv.getAttribute('data-file');
             const response = await fetch(filePath);
             if (!response.ok) {
@@ -21,40 +27,49 @@ document.querySelectorAll('.collapsible').forEach(section => {
                 return;
             }
             const text = await response.text();
-  
-            // Se il file è .md, usiamo Marked.js per il parsing; altrimenti, mostriamo testo semplice
+
+            // Se è un file Markdown, usa Marked.js, altrimenti mostra testo normale
             if (filePath.endsWith('.md')) {
-            contentDiv.innerHTML = marked.parse(text);
+                contentDiv.innerHTML = marked.parse(text);
             } else {
-            contentDiv.innerText = text;
+                contentDiv.innerText = text;
             }
 
-            // Calcola l'altezza e applica l'animazione
-            //section.style.height = 'auto'; // Permette di calcolare l'altezza completa
+            // Calcola l'altezza espansa
+            contentDiv.style.display = ""; // Mostra temporaneamente per calcolare l'altezza
             const expandedHeight = section.scrollHeight + 3 + "px";
-            section.style.height = initialHeight; // Altezza chiusa temporanea
+            section.style.height = initialHeight; // Altezza iniziale temporanea
 
-            // Forza il ricalcolo dello stile per attivare la transizione
-            section.offsetHeight; // Hack per innescare il rendering
+            section.offsetHeight; // Forza il rendering
             section.style.transition = "height 0.5s ease"; // Applica la transizione
-            section.style.height = expandedHeight; // Espande gradualmente fino all'altezza totale
+            section.style.height = expandedHeight; // Espande
+
+            // Mostra il contenuto alla fine della transizione
+            section.addEventListener('transitionend', () => {
+                contentDiv.style.display = "";
+                contentDiv.style.opacity = 1;
+                contentDiv.style.transition = "opacity 0.5s ease"; // Transizione per opacità
+            }, { once: true });
 
         } else {
-            // Collapsing
-            const expandedHeight = section.scrollHeight + 3 + "px"; // Record current expanded height
-            section.style.height = expandedHeight; // Start collapse from this height
-            section.offsetHeight; // Trigger reflow
-
-            section.style.height = initialHeight; // Collapse to initial height
-
+            // Chiusura della section
             section.addEventListener('transitionend', () => {
                 section.classList.remove('expanded');
-                contentDiv.innerHTML = ""; // Clear content only after transition ends
-                section.style.transition = ""; // Reset transition for consistency
+                contentDiv.innerHTML = ""; // Cancella il contenuto
+                section.style.transition = ""; // Reset transizione
             }, { once: true });
+
+            const expandedHeight = section.scrollHeight + 3 + "px";
+            section.style.height = expandedHeight; // Altezza da cui partire per collassare
+            section.offsetHeight; // Trigger reflow
+
+            // Chiude gradualmente fino all’altezza iniziale
+            section.style.height = initialHeight;
+            contentDiv.style.opacity = 0; // Dissolvenza del contenuto durante il collasso
         }
     });
-  });
+});
+
 
   // Handle contact me form submission in Easy Mode and Nerd Mode
 
@@ -106,9 +121,10 @@ document.querySelectorAll('.collapsible').forEach(section => {
       let response = "";
   
       if (command.startsWith("sendmail from ")) {
-          const email = command.slice(13);
+          const email = command.split(" ")[2];
           if (validateEmail(email)) {
-              terminalState.from = email;
+              terminalState.from = email; // for some reason, slice(15) doesn't work and cuts off the first character
+              console.log(terminalState);
               response = "Email address set.";
           } else {
               response = "Invalid email format. Try again.";
@@ -125,9 +141,9 @@ document.querySelectorAll('.collapsible').forEach(section => {
               response = "Incomplete message. Use 'sendmail from [email]' and 'addtext [message]'.";
           }
       } else if (command === "help") {
-          response = "Commands:\n" +
-                     "  sendmail from [email] - Set the sender's email address.\n" +
-                     "  addtext [message] - Add your message.\n" +
+          response = "Commands:<br>" +
+                     "  sendmail from [email] - Set the sender's email address.<br>" +
+                     "  addtext [message] - Add your message.<br>" +
                      "  send - Send the message.";
       } else {
           response = `Unknown command: ${command}. Type "help" for available commands.`;

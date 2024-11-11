@@ -58,7 +58,6 @@ nav a:hover {
 }
 
 section {
-  border: 1px solid #00ff00;
   padding: 15px;
   border-radius: 5px;
 }
@@ -69,7 +68,35 @@ footer {
   font-size: 0.8em;
 }
 
-/* Contatto */
+/* About me Styles */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #00ff00;
+}
+
+.about-text {
+  max-width: 1080px;
+  color: #c9c9c9;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 15px;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+}
+
+
+/* Contact me form */
 #contact {
   border: 1px solid #00ff00;
   padding: 20px;

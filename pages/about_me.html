@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about_me.css">
+
+  <!-- Inclusione di Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="about_me.js" defer></script>
+</head>
+<body onload="populateArticle()">
+  <header>
+    <h1>Pietro Pianigiani</h1>
+  </header>
+
+  <section id="about-section" class="center-content">
+    <div class="profile-picture">
+      <img src="https://media.licdn.com/dms/image/v2/C4E03AQHOGPZB39-xFQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1658218119172?e=1736985600&v=beta&t=HibKNy2Whj95RnfG5Gnaj1e-LyDG0kbE4m2rmYD8TXQ" alt="Profile Picture" class="rounded-image">
+    </div>
+
+    <article id="about_me_content" class="about-text">
+      <div id="about-me-content" data-file="about_me.md"></div>
+    </article>
+  </section>
+  
+  <footer>
+    <p>Pietro Pianigiani, aka Gianeh</p>
+  </footer>
+</body>
+</html>
