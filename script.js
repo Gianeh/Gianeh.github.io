@@ -1,7 +1,7 @@
 // Scripts of the index page
 
 // A function to expand sections on demand
-// A id indexed dictionary to store initial heights of sections
+// An id indexed dictionary to store initial heights of sections
 const initialHeights = {};
 document.querySelectorAll('.collapsible').forEach(section => {
     initialHeights[section.id] = section.scrollHeight + "px";
@@ -55,3 +55,98 @@ document.querySelectorAll('.collapsible').forEach(section => {
         }
     });
   });
+
+  // Handle contact me form submission in Easy Mode and Nerd Mode
+
+    // Riferimento al terminale e all'input
+    const terminal = document.querySelector('.terminal');
+    const terminalInput = document.getElementById('terminal-input');
+
+    // Evento di click per dare focus all'input
+    terminal.addEventListener('click', () => {
+        terminalInput.focus();
+});
+
+  document.getElementById("mode-toggle").addEventListener("click", toggleMode);
+
+  let mode = "easy";
+  let terminalState = {
+      from: "",
+      message: ""
+  };
+  
+  function toggleMode() {
+      const easyMode = document.getElementById("easy-mode");
+      const nerdMode = document.getElementById("nerd-mode");
+  
+      if (mode === "easy") {
+          easyMode.style.display = "none";
+          nerdMode.style.display = "block";
+          document.getElementById("mode-toggle").textContent = "Switch to Easy Mode";
+          mode = "nerd";
+      } else {
+          easyMode.style.display = "block";
+          nerdMode.style.display = "none";
+          document.getElementById("mode-toggle").textContent = "Switch to Nerd Mode";
+          mode = "easy";
+      }
+  }
+  
+  // Command handling in Nerd Mode
+  document.getElementById("terminal-input").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+          const input = event.target.value.trim();
+          processCommand(input);
+          event.target.value = "";
+      }
+  });
+  
+  function processCommand(command) {
+      const output = document.getElementById("output");
+      let response = "";
+  
+      if (command.startsWith("sendmail from ")) {
+          const email = command.slice(13);
+          if (validateEmail(email)) {
+              terminalState.from = email;
+              response = "Email address set.";
+          } else {
+              response = "Invalid email format. Try again.";
+          }
+      } else if (command.startsWith("addtext ")) {
+          terminalState.message = command.slice(8);
+          response = "Message text added.";
+      } else if (command === "send") {
+          if (terminalState.from && terminalState.message) {
+              sendFormspreeEmail(terminalState.from, terminalState.message);
+              response = "Message sent!";
+              terminalState = { from: "", message: "" };
+          } else {
+              response = "Incomplete message. Use 'sendmail from [email]' and 'addtext [message]'.";
+          }
+      } else if (command === "help") {
+          response = "Commands:\n" +
+                     "  sendmail from [email] - Set the sender's email address.\n" +
+                     "  addtext [message] - Add your message.\n" +
+                     "  send - Send the message.";
+      } else {
+          response = `Unknown command: ${command}. Type "help" for available commands.`;
+      }
+  
+      output.innerHTML += `<p>${response}</p>`;
+      output.scrollTop = output.scrollHeight;
+  }
+  
+  function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+  
+  // Simulates submission via Formspree in Nerd Mode
+  function sendFormspreeEmail(from, message) {
+      const easyForm = document.getElementById("easy-mode");
+      easyForm.querySelector("#name").value = "Nerd Mode User";
+      easyForm.querySelector("#email").value = from;
+      easyForm.querySelector("#message").value = message;
+      easyForm.submit();
+  }
+  

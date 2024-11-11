@@ -55,25 +55,73 @@
   </section>
 
   <!-- Send me an email message box-->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Select your preferred mode of contact:</p>
+  
+    <!-- Modalità di selezione -->
+    <button id="mode-toggle">Switch to Nerd Mode</button>
+  
+    <!-- Easy Mode Form -->
+    <form action="https://formspree.io/f/movqdrgl" method="POST" class="contact-form" id="easy-mode">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit">Send</button>
+    </form>
+  
+    <!-- Nerd Mode Terminal -->
+    <div id="nerd-mode" class="terminal" style="display: none;">
+      <div class="terminal-output" id="output">
+        <p>Type "help" to see a list of commands.</p>
+      </div>
+      <input type="text" id="terminal-input" placeholder=">>">
+    </div>
+    <script>
+      const input = document.getElementById('terminal-input');
+      const placeholder = '>>';
+    
+      input.addEventListener('focus', () => {
+        if (!input.value.startsWith(placeholder)) {
+          input.value = placeholder;
+        }
+      });
+    
+      input.addEventListener('input', (event) => {
+        if (!event.target.value.startsWith(placeholder)) {
+          event.target.value = placeholder + event.target.value.replace(placeholder, '');
+        }
+      });
+    
+      input.addEventListener('keydown', (event) => {
+        if (event.key === 'Backspace' && input.selectionStart <= placeholder.length) {
+          event.preventDefault();
+        }
+      });
+    
+      input.addEventListener('click', () => {
+        if (input.selectionStart < placeholder.length) {
+          input.setSelectionRange(placeholder.length, placeholder.length);
+        }
+      });
+    </script>
+  </section>
+
   <br>
-    <h2>Send me an email</h2>
-  <form
-  action="https://formspree.io/f/movqdrgl"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
   <br>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-  <br>
+
   <footer>
     <p>Pietro Pianigiani, aka Gianeh</p>
   </footer>

@@ -1,90 +1,214 @@
+/* Stili generali */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #1e1e1e;
-    color: #00ff00;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  header, nav, section, footer {
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  header {
-    text-align: center;
-    border-bottom: 2px solid #00ff00;
-    padding-bottom: 10px;
-  }
-  
-  h1, h2 {
-    color: #00ff00;
-  }
-  
-  p, li {
-    color: #c9c9c9;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  nav a {
-    color: #00ff00;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: 1px solid transparent;
-    transition: 0.3s;
-  }
-  
-  nav a:hover {
-    border: 1px solid #00ff00;
-    background-color: #333;
-  }
-  
-  section {
-    border: 1px solid #00ff00;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  footer {
-    text-align: center;
-    color: #555;
-    font-size: 0.8em;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* collapsible animation for sections */
-  
-.collapsible {
-    border: 1px solid #00ff00;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #00ff00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header, nav, section, footer {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 10px;
+}
+
+h1, h2 {
+  color: #00ff00;
+}
+
+p, li {
+  color: #c9c9c9;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  border: 1px solid #00ff00;
+  background-color: #333;
+}
+
+section {
+  border: 1px solid #00ff00;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  font-size: 0.8em;
+}
+
+/* Contatto */
+#contact {
+  border: 1px solid #00ff00;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact h2 {
+  color: #00ff00;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+
+/* Toggle Button */
+#mode-toggle {
+  background-color: #00ff00;
+  color: #1e1e1e;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+#mode-toggle:hover {
+  background-color: #33ff33;
+}
+
+/* Easy Mode Form */
+.contact-form {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra i contenuti */
+  padding: 15px;
+  background-color: #1e1e1e;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Contenitore per allineamento dei label e degli input */
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column; /* Imposta un layout verticale */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  color: #00ff00;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: #111;
+  border: 1px solid #00ff00;
+  border-radius: 3px;
+  padding: 8px;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%; /* Riempie lo spazio disponibile */
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Per il campo del messaggio (textarea) */
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Pulsante di invio */
+.contact-form button[type="submit"] {
+  background-color: #00ff00;
+  color: #1e1e1e;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #33ff33;
+}
+
+/* Nerd Mode Terminal */
+.terminal {
+  background-color: #111;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-output {
+  color: #00ff00;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#terminal-input {
+  background-color: #111;
+  border: none;
+  color: #00ff00;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#terminal-input::placeholder {
+  color: #00ff00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #mode-toggle, .contact-form button[type="submit"] {
+      width: 100%;
   }
-  
-  .collapsible.expanded {
-    padding: 15px;
-  }
-  
-  .content {
-    display: none; /* Nasconde il contenuto inizialmente */
-  }
-  
-  .collapsible.expanded .content {
-    display: block;
-  }
+}
