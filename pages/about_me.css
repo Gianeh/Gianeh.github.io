@@ -95,6 +95,12 @@ footer {
   background-color: #1e1e1e;
 }
 
+.clickable-header {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
 
 /* Contact me form */
 #contact {

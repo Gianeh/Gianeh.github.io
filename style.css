@@ -69,6 +69,12 @@ footer {
   font-size: 0.8em;
 }
 
+.clickable-header {
+  text-decoration: none; /* Rimuove l'underline */
+  color: inherit; /* Mantiene il colore del testo dell'header */
+  display: inline-block;
+}
+
 /* Contatto */
 #contact {
   border: 1px solid #00ff00;
