@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extracurricolare Galileo Galilei</title>
+  <link rel="stylesheet" href="teaching.css">
+
+  <!-- Inclusione di Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="teaching.js" defer></script>
+</head>
+<body onload="populateArticle()">
+  <header>
+    <a href="../index.html" class="clickable-header">
+        <h1>Corso di Fondamenti di Informatica<br>2024/2025</h1>
+    </a>
+    <p>Liceo Scientifico Galileo Galilei</p>
+  </header>
+
+  <section id="lecture_1" class="collapsible">
+    <h2>Lezione 1</h2>
+    <p>Introduzione al funzionamento del calcolatore, laboratorio di assemblaggio di un PC e di un sistema operativo, soluzioni alternative.</p>
+    <div class="content" data-file="lectures/lecture_1.md"></div>
+  </section>
+  
+  <section id="lecture_2" class="collapsible">
+    <h2>Lezione 2</h2>
+    <p>Il codice binario, codifica dei dati in basi diverse da 10. Cos'è il linguaggio macchina e come il calcolatore "comprende" dati astratti.</p>
+    <div class="content" data-file="lectures/lecture_2.md"></div>
+  </section>
+  
+  <section id="lecture_3" class="collapsible">
+    <h2>Lezione 3</h2>
+    <p>... ... ... ...</p>
+    <div class="content" data-file="../wip.md"></div>
+  </section>
+  
+  <footer>
+    <p>Pietro Pianigiani, aka Gianeh</p>
+  </footer>
+</body>
+</html>

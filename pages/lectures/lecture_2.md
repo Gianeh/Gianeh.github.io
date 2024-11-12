@@ -1,0 +1,2 @@
+## 24/11/2024 - La codifica binaria e l'algebra di Boole
+Durante questa lezione introduttiva abbiamo esplorato le rappresentazioni dei dati astratti all'interno della memoria di un moderno calcolatore. Passando per la rappresentazione binaria dei numeri e successivamente delle lettere, abbiamo derivato insieme il massimo numero di informazioni gestibili da un computer. Abbiamo inoltre introdotto la logica binaria nel contesto dell'algebra di Boole, necessaria per operazioni di controllo di flusso e successive implementazioni di linguaggio macchina e linguaggi più astratti.
