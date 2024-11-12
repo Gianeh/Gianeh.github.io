@@ -20,4 +20,4 @@ As stated above, I'm a very curious person, a quality I feel confident recognizi
 
 I consider myself a dreamer, always eager to tell stories on topics that fascinate me, but I most often am a good listener too. I'm particularly proud of my **friends** and of my extended network. I'm strongly convinced to be able to create great bounds with emphatic and curious people from every community. I can work in a deep focus but I definitely give my best in a team.
 
-My takes can be strong and my opinions well formed on many of the commonly asked topics, nonetheless I'm a really open minded person, convincing me requires nothing more than facts, logic or empathy. When approaching new arguments I see myself as humble person well convinced of his domain skills and always ready to learn more through every step.
+My takes can be strong and my opinions well formed on many of the commonly asked topics, nonetheless I'm a really open minded person, convincing me requires nothing more than facts, logic or empathy. When approaching new arguments I see myself as a humble person well convinced of his domain skills and always ready to learn more through every step.
