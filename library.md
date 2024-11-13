@@ -1,0 +1,2 @@
+## My personal book library
+Just a list of [all the books I own](/pages/library.html), I've read or still need to complete or start, categorized by Title, Author, Genre, Notes. Feel free to suggest me some readings from the form in here :)

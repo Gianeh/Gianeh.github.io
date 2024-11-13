@@ -37,7 +37,7 @@ document.querySelectorAll('.collapsible').forEach(section => {
 
             // Calcola l'altezza espansa
             contentDiv.style.display = ""; // Mostra temporaneamente per calcolare l'altezza
-            const expandedHeight = section.scrollHeight + 3 + "px";
+            const expandedHeight = section.scrollHeight + 15 + "px";
             section.style.height = initialHeight; // Altezza iniziale temporanea
 
             section.offsetHeight; // Forza il rendering
@@ -59,7 +59,7 @@ document.querySelectorAll('.collapsible').forEach(section => {
                 section.style.transition = ""; // Reset transizione
             }, { once: true });
 
-            const expandedHeight = section.scrollHeight + 3 + "px";
+            const expandedHeight = section.scrollHeight + 15 + "px";
             section.style.height = expandedHeight; // Altezza da cui partire per collassare
             section.offsetHeight; // Trigger reflow
 
