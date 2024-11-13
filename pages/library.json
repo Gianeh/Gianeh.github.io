@@ -62,5 +62,45 @@
         "notes": "",
         "read": false,
         "img": "https://m.media-amazon.com/images/I/81eAZmWW-gL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Miti d'Oggi",
+        "author": "Roland Barthes",
+        "genre": "antology, essay",
+        "notes": "",
+        "read": false,
+        "img": "https://www.einaudi.it/content/uploads/2016/02/978880623079GRA.JPG"
+    },
+    {
+        "title": "Siddhartha",
+        "author": "Hermann Hesse",
+        "genre": "novel, philosophy",
+        "notes": "",
+        "read": true,
+        "img": "https://www.adelphi.it/spool/i__id12100_mw1000__1x.jpg"
+    },
+    {
+        "title": "Nel mare ci sono i coccodrilli",
+        "author": "Fabio Geda",
+        "genre": "biography, novel",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/81+iV7+FOYL._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Solaris",
+        "author": "Stanislaw Lem",
+        "genre": "scifi",
+        "notes": "Not Lem's best book imho, still, incredible reading!",
+        "read": true,
+        "img": "https://storage1010.cdn-immedia.net/upload/assets/files/841,it,5491/3133-3.jpg"
+    },
+    {
+        "title": "L'Invincibile",
+        "author": "Stanislaw Lem",
+        "genre": "scifi",
+        "notes": "Love this book, I have recorded an audiobook of the first chapter <3",
+        "read": true,
+        "img": "https://storage1010.cdn-immedia.net/upload/assets/files/841,it,12551/11784-3.jpg"
     }
 ]
