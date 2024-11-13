@@ -1,0 +1,123 @@
+/* Stili generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #00ff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #00ff00;
+  }
+  
+  h2 {
+    color: #00ff00;
+  }
+  
+  /* Contenitore per la sezione libreria */
+  #library {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  /* Stile singolo libro */
+  .book {
+    background-color: #111;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    color: #c9c9c9;
+    transition: transform 0.3s ease;
+  }
+
+  .book h2 {
+  white-space: normal;       /* Permette al testo di andare su più righe */
+  overflow: hidden;          /* Nasconde eventuali eccedenze */
+  word-wrap: break-word;     /* Va a capo automaticamente per mantenere il testo all'interno */
+  max-width: 100%;           /* Limita la larghezza del titolo all'interno del contenitore */
+  color: #00ff00;            /* Colore del testo come nel tema */
+  text-align: center;        /* Centra il testo nel contenitore */
+  margin: 10px 0;            /* Aggiunge uno spazio sopra e sotto il titolo */
+}
+
+  
+  .book:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  h2, p {
+    margin-bottom: 8px;
+  }
+  
+  /* Opzioni di filtro e ordinamento */
+  .filter-sort {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #00ff00;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  select {
+    background-color: #111;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+  }
+  
+  select option {
+    background-color: #111;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    color: #555;
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    #library {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

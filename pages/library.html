@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="library.css">
+  <script src="library.js" defer></script>
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+
+<body>
+  <header>
+    <h1>Pietro Pianigiani</h1>
+    <h2>My personal library</h2>
+  </header>
+
+  <div class="filter-sort">
+    <label for="sort">Sort by:</label>
+    <select id="sort" onchange="sortLibrary()">
+      <option value="title">Title</option>
+      <option value="author">Author</option>
+      <option value="genre">Genre</option>
+      <option value="read">Read Status</option>
+    </select>
+  </div>
+
+  <section id="library">
+    <!-- Books will be populated here -->
+  </section>
+
+  <footer>
+    <p>Pietro Pianigiani, aka Gianeh</p>
+  </footer>
+</body>
+</html>

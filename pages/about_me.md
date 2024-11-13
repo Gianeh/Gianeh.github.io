@@ -1,6 +1,6 @@
 A big HI to everyone reading! I'm Pietro, a tech enthusiast and AI student at the University of Siena, Department of Information Engineering and Mathematical Sciences [DIISM](https://artificial-intelligence-automation.unisi.it/en). It seems like you've landed on my portfolio!
 
-On this page, you’ll find a brief description of my past collaborations and a short biography. To view my humble projects, please browse this website from its [home](https://gianeh.github.io/) (but keep in mind it's still heavily **under construction** and subject to structural changes).
+On this page, you’ll find a brief description of my past collaborations and a short biography. To view my humble projects, please browse this website from its [home](../index.html) (but keep in mind it's still heavily **under construction** and subject to structural changes).
 
 ## About Me - as a Computer Engineer
 I've been a passionate student and an everyday learner, but most importantly a **curious individual**, for as long as I can remember. My first contact with the digital world happened at age 4, thanks to my father's experiments with an old arcade game emulator called "MAME 32."
@@ -16,7 +16,7 @@ The very first "programming language" I learned was Python, which directed my ca
 My passion for software development has kept pace, and after completing my BSc with top marks and on time, I am now pursuing an MSc in [Artificial Intelligence](https://en.unisi.it/ugov/degree/16834) at the same university. Currently, I’m 23 and in my second year, and new opportunities are sprouting in every direction. Every day, new projects await, and I feel ready to embark on as many as possible, meet passionate people, and "skyrocket" my career in the vibrant community of Computer Science and Engineering! ;)
 
 ## About Me - as a Person
-As stated above, I'm a very curious person, a quality I feel confident recognizing in others and believe to be essential for any intellectual human activity. This principal aspect forced me through the exploration of a variety of subjects I considered of interest, spanning from the obvious computer science, to human anatomy and fitness training, nutrition, videogames, cult and modern literature (take a look at my personal [library](https://gianeh.github.io/pages/library)) and philosophy.
+As stated above, I'm a very curious person, a quality I feel confident recognizing in others and believe to be essential for any intellectual human activity. This principal aspect forced me through the exploration of a variety of subjects I considered of interest, spanning from the obvious computer science, to human anatomy and fitness training, nutrition, videogames, cult and modern literature (take a look at my personal [library](/pages/library.html)) and philosophy.
 
 I consider myself a dreamer, always eager to tell stories on topics that fascinate me, but I most often am a good listener too. I'm particularly proud of my **friends** and of my extended network. I'm strongly convinced to be able to create great bounds with emphatic and curious people from every community. I can work in a deep focus but I definitely give my best in a team.
 

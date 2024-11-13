@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Il Signore Degli Anelli",
+        "author": "J.R.R. Tolkien",
+        "genre": "fantasy",
+        "notes": "",
+        "read": true,
+        "img": "https://uploads.acciobooks.com/224001/9788845294044.1000.jpg"
+    },
+    {
+        "title": "Il Silmarillion",
+        "author": "J.R.R. Tolkien",
+        "genre": "fantasy",
+        "notes": "breathtaking",
+        "read": true,
+        "img": "https://dbtitoli.giunti.it/api/media/image/getImage?cm=B00368&type=P"
+    },
+    {
+        "title": "Le Tre Stimmate di Palmer Eldritch",
+        "author": "Philip K. Dick",
+        "genre": "scifi",
+        "notes": "probably my favourite scifi novel",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788834731338_0_536_0_75.jpg"
+    },
+    {
+        "title": "Lo Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "fantasy",
+        "notes": "",
+        "read": true,
+        "img": "https://img.frasicelebri.it/images/thumb_book-lo-hobbit.330x330_q95.jpg"
+    },
+    {
+        "title": "Neuromante",
+        "author": "William Gibson",
+        "genre": "scifi",
+        "notes": "split my head in half",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788804676836_0_536_0_75.jpg"
+    },
+    {
+        "title": "Mattatoio n. 5",
+        "author": "Kurt Vonnegut",
+        "genre": "scifi, historical fiction",
+        "notes": "A unique style",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788807885051_0_536_0_75.jpg"
+    },
+    {
+        "title": "Diario Minimo",
+        "author": "Umberto Eco",
+        "genre": "antology",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/61MhzqSsVrL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "The Ultimate Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "genre": "scifi",
+        "notes": "",
+        "read": false,
+        "img": "https://m.media-amazon.com/images/I/81eAZmWW-gL._AC_UF1000,1000_QL80_.jpg"
+    }
+]
