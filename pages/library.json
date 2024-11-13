@@ -50,7 +50,7 @@
     {
         "title": "Diario Minimo",
         "author": "Umberto Eco",
-        "genre": "antology",
+        "genre": "anthology, essay",
         "notes": "",
         "read": true,
         "img": "https://m.media-amazon.com/images/I/61MhzqSsVrL._AC_UF1000,1000_QL80_.jpg"
@@ -60,13 +60,13 @@
         "author": "Douglas Adams",
         "genre": "scifi",
         "notes": "",
-        "read": false,
+        "read": true,
         "img": "https://m.media-amazon.com/images/I/81eAZmWW-gL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "title": "Miti d'Oggi",
         "author": "Roland Barthes",
-        "genre": "antology, essay",
+        "genre": "anthology, essay",
         "notes": "",
         "read": false,
         "img": "https://www.einaudi.it/content/uploads/2016/02/978880623079GRA.JPG"
