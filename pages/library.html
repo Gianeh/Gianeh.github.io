@@ -23,10 +23,28 @@
     <select id="sort" onchange="sortLibrary()">
       <option value="title">Title</option>
       <option value="author">Author</option>
-      <option value="genre">Genre</option>
       <option value="read">Read Status</option>
     </select>
   </div>
+  <button onclick="toggleGenreSelector()">Filter by Genre</button>
+  <br>
+  <div id="genre_selector" style="display:none">
+    <label for="selected-genres">Selected Genres:</label>
+    <input type="text" id="selected-genres" readonly placeholder="Select genres from the dropdown" />
+    <br>
+    <br>
+    <label for="genre-combobox">Add Genre:</label>
+    <br>
+    <select id="genre-combobox" onchange="addGenre()">
+      <!-- Options will be populated dynamically based on genres in the library -->
+    </select>
+
+    <button onclick="clearGenres()">Clear Genres</button>
+  
+    <br>
+    <br> 
+  </div> 
+  
 
   <section id="library">
     <!-- Books will be populated here -->

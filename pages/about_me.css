@@ -242,6 +242,16 @@ footer {
   color: #00ff00;
 }
 
+.about-text a {
+  color: #FF00FF;         /* Colore del link in verde */
+  text-decoration: none;  /* Rimuove la sottolineatura */
+  transition: color 0.3s ease; /* Transizione per l'hover */
+}
+
+.about-text a:hover {
+  color: #00cc00; /* Leggero cambiamento di colore per l'hover */
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   #mode-toggle, .contact-form button[type="submit"] {
