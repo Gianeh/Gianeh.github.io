@@ -222,5 +222,125 @@
         "notes": "",
         "read": false,
         "img": "https://m.media-amazon.com/images/I/41OWfQ397OL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Bestiario Matematico",
+        "author": "Paolo Alessandrini",
+        "genre": "math, philosophy",
+        "notes": "",
+        "read": true,
+        "img": "https://www.amolamatematica.it/media/k2/items/cache/68fd1d661976b9d8b879f7809970f2e8_XL.jpg"
+    },
+    {
+        "title": "G\u00f6del, Escher, Bach",
+        "author": "Douglas R. Hofstadter",
+        "genre": "math, art, music, philosophy, antology, essay",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/61jOcf1eHwL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Soo Good They can't Ignore You",
+        "author": "Cal Newport",
+        "genre": "career, essay",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/81vEQ9rFgKL.jpg"
+    },
+    {
+        "title": "The Three-Body Problem",
+        "author": "Cixin Liu",
+        "genre": "scifi",
+        "notes": "",
+        "read": true,
+        "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415428227i/20518872.jpg"
+    },
+    {
+        "title": "Invariances",
+        "author": "Robert Nozick",
+        "genre": "essay, philosophy",
+        "notes": "Big thanks to my friend \"Bota\", need to read this!",
+        "read": false,
+        "img": "https://m.media-amazon.com/images/I/616pwtQM95L.jpg"
+    },
+    {
+        "title": "Il Disco di Fiamma",
+        "author": "Philip K. Dick",
+        "genre": "",
+        "notes": "Once again P. K. Dick convinces me with yet another vision",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/91hiUOXBw0L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Ma gli Androidi Sognano Pecore Elettriche?",
+        "author": "Philip K. Dick",
+        "genre": "scifi",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/71av1mi-AKL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "L'Uomo nell'Alto Castello",
+        "author": "Philip K. Dick",
+        "genre": "scifi",
+        "notes": "",
+        "read": false,
+        "img": "https://www.oscarmondadori.it/content/uploads/2022/09/978880473146HIG.webp"
+    },
+    {
+        "title": "Fontamara",
+        "author": "Silone",
+        "genre": "novel, historical fiction",
+        "notes": "Viva chi? La regina Margherita! Ma \u00e8 morta... No ma come!?",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/71TszuexVrS._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Il Sentiero dei Nidi di Ragno",
+        "author": "Italo Calvino",
+        "genre": "novel, historical fiction",
+        "notes": "",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788804637134_0_464_0_75.jpg"
+    },
+    {
+        "title": "Le Cosmicomiche",
+        "author": "Italo Calvino",
+        "genre": "anthology, scifi",
+        "notes": "",
+        "read": true,
+        "img": "https://www.oscarmondadori.it/content/uploads/2023/02/978880477285HIG.webp"
+    },
+    {
+        "title": "Bomba Atomica",
+        "author": "Roberto Mercadini",
+        "genre": "essay",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/71nEvDxB5oL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Spinoza e Popcorn",
+        "author": "Rick Dufer",
+        "genre": "philosophy",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/91no2w9okTL._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Il Diario del Seduttore",
+        "author": "Soren Kierkegaard",
+        "genre": "philosophy",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/71-8ZI6RN7L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "L'Unico e la Sua Propriet\u00e0",
+        "author": "Max Stirner",
+        "genre": "essay, philosophy",
+        "notes": "",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/61PjsQ0WOTL._AC_UF1000,1000_QL80_.jpg"
     }
 ]
