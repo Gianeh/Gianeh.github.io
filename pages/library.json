@@ -102,5 +102,125 @@
         "notes": "Love this book, I have recorded an audiobook of the first chapter <3",
         "read": true,
         "img": "https://storage1010.cdn-immedia.net/upload/assets/files/841,it,12551/11784-3.jpg"
+    },
+    {
+        "title": "Le Avventure di Tom Bombadil",
+        "author": "J.R.R. Tolkien",
+        "genre": "fantasy, poetry",
+        "notes": "",
+        "read": false,
+        "img": "https://www.terradeigiochi.it/25418-large_default/le-avventure-di-tom-bombadil.jpg"
+    },
+    {
+        "title": "Nostri Amici da Frolix 8",
+        "author": "Philip K. Dick",
+        "genre": "scifi",
+        "notes": "",
+        "read": false,
+        "img": "https://m.media-amazon.com/images/I/81qsyjn8XbL._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Golem XIV",
+        "author": "Stanislaw Lem",
+        "genre": "scifi, philosophy, essay",
+        "notes": "\"Forgotten\" book but a must have for a Lem lover",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788887847680_0_536_0_75.jpg"
+    },
+    {
+        "title": "Dune",
+        "author": "Frank P. Herbert",
+        "genre": "scifi, fantasy",
+        "notes": "A dream for a lover of both genres",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/511suynbMfL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Messia di Dune",
+        "author": "Frank P. Herbert",
+        "genre": "scifi, fantasy",
+        "notes": "Ruins a bit the dream of the first but opens the plot for different narratives",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/71mhF66EUiL._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "I Figli di Dune",
+        "author": "Frank P. Herbert",
+        "genre": "scifi, fantasy",
+        "notes": "",
+        "read": false,
+        "img": "https://m.media-amazon.com/images/I/71xkDB5p8-L._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "Ghiaccio 9",
+        "author": "Kurt Vonnegut",
+        "genre": "scifi",
+        "notes": "",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788807883682_0_536_0_75.jpg"
+    },
+    {
+        "title": "La Macchina del Tempo",
+        "author": "H. G. Wells",
+        "genre": "scifi",
+        "notes": "",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788806240363_0_536_0_75.jpg"
+    },
+    {
+        "title": "La Guerra dei Mondi",
+        "author": "H. G. Wells",
+        "genre": "scifi",
+        "notes": "",
+        "read": false,
+        "img": "https://i.ebayimg.com/images/g/WW8AAOSwDVNjAmWM/s-l1200.jpg"
+    },
+    {
+        "title": "Burning Chrome",
+        "author": "William Gibson",
+        "genre": "scifi, cyberpunk",
+        "notes": "",
+        "read": false,
+        "img": "https://m.media-amazon.com/images/I/91H6tX07THL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "The Difference Engine",
+        "author": "William Gibson, Bruce Sterling",
+        "genre": "scifi, steampunk",
+        "notes": "Didn't love it, but the guys made up steampunk, just wow",
+        "read": true,
+        "img": "https://m.media-amazon.com/images/I/51vgdH3v6aL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "title": "The Peripheral Inverso",
+        "author": "William Gibson",
+        "genre": "scifi",
+        "notes": "",
+        "read": false,
+        "img": "https://shop.palazzoroberti.it/995201/the-peripheral-inverso.jpg"
+    },
+    {
+        "title": "Il Mondo Nuovo",
+        "author": "Aldous Huxley",
+        "genre": "scifi",
+        "notes": "",
+        "read": false,
+        "img": "https://www.ibs.it/images/9788804735823_0_536_0_75.jpg"
+    },
+    {
+        "title": "Howard Phillips Lovecraft Tutti i Racconti",
+        "author": "H. P. Lovecraft",
+        "genre": "horror, fantasy",
+        "notes": "Partially read, the most famous ones :)",
+        "read": true,
+        "img": "https://www.ibs.it/images/9788804680413_0_536_0_75.jpg"
+    },
+    {
+        "title": "E. A. Poe Tutti i Racconti",
+        "author": "Edgar Allan Poe",
+        "genre": "horror",
+        "notes": "",
+        "read": false,
+        "img": "https://m.media-amazon.com/images/I/41OWfQ397OL._AC_UF1000,1000_QL80_.jpg"
     }
 ]
