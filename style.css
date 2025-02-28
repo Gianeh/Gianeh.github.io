@@ -45,6 +45,14 @@ nav ul {
   /*overflow-x: auto;*/
 }
 
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    font-size: 0.9em; /* Opzionale: riduce la dimensione del testo */
+  }
+}
+
 
 nav a {
   color: #00ff00;
