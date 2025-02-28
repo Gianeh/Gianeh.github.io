@@ -38,10 +38,13 @@ p, li {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: nowrap;        /* Impedisce la rottura degli elementi su più righe */
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
+  /*overflow-x: auto;*/
 }
+
 
 nav a {
   color: #00ff00;
