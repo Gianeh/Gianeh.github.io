@@ -1,0 +1,3 @@
+# Simple Multi Layer Perceptron Library
+
+Realized as University Project this codebase aimed at demonstrating a deep comprehension of the propagation in a neural network and of learning rate adjustment tchniques as well as functional nuances. An exagerately detailed [report](https://github.com/Gianeh/MLP/blob/master/report.pdf) wrote mostly by [Kevin](https://www.linkedin.com/in/kevin-gagliano-0703a12a3/) can be downloaded from the repo.

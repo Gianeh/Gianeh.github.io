@@ -135,6 +135,40 @@
             ],
             "type": "github",
             "link": "https://github.com/Gianeh/Hide_and_Seek/tree/neural"
+        },
+        {
+            "id": "mlp-toy-library",
+            "title": "MLP toy library",
+            "description": "Low level implementation of Neural Network toy library to implement MLPs and solve toy problems",
+            "date": "01/2024 - 02/2024",
+            "markdown": "projects/mlp-toy-library.md",
+            "images": [
+                "https://github.com/Gianeh/MLP/raw/main/circle.png"
+            ],
+            "technologies": [
+                "Python",
+                "Numpy"
+            ],
+            "type": "github",
+            "link": "https://github.com/Gianeh/MLP"
+        },
+        {
+            "id": "scooterrally-toscano-it-and-organization",
+            "title": "Scooterrally Toscano IT and Organization",
+            "description": "Implemented Full-Stack sale and booking process for European level event. Acquired leads and payments, handled discounts and colaboration with a ferries, automated email parsing and follow up.",
+            "date": "11/2023 - 05/2024",
+            "markdown": "projects/scooterrally-toscano-it-and-organization.md",
+            "images": [
+                "https://www.scooterrallytoscano.it/2024/imgs/header_new.png"
+            ],
+            "technologies": [
+                "HTML",
+                "Javascript",
+                "PhP",
+                "Python"
+            ],
+            "type": "work_experience",
+            "link": ""
         }
     ]
 }
