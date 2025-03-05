@@ -1,0 +1,417 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #00ff00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Project controls styles */
+.project-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #111;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-container label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #00ff00;
+}
+
+.filter-container select {
+  background-color: #111;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 8px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-container select option {
+  background-color: #111;
+}
+
+.filter-container select:focus {
+  border-color: #00cc00;
+}
+
+#reset-filters {
+  background-color: #00ff00;
+  color: #1e1e1e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+#reset-filters:hover {
+  background-color: #00cc00;
+  transform: scale(1.05);
+}
+
+#reset-filters:active {
+  background-color: #009900;
+  transform: scale(1);
+}
+
+.project-technologies {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.tech-label {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.tech-list {
+  color: #c9c9c9;
+}
+
+.no-projects, .error {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  margin: 20px 0;
+  color: #c9c9c9;
+}
+
+.project-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.project-link a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #00ff00;
+  color: #1e1e1e;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-link a:hover {
+  background-color: #FF00FF;
+  transform: translateY(-2px);
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-image {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image img:hover {
+  transform: scale(1.05);
+}
+
+h1, h2 {
+  color: #00ff00;
+}
+
+h3 {
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+p, li {
+  color: #c9c9c9;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  font-size: 0.8em;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.footer-above-timeline {
+  position: relative;
+  z-index: 2; /* Ensure footer is above the timeline line */
+  background-color: #1e1e1e; /* Match body background color */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.clickable-header {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Timeline specific styles */
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute; /* Absolute position relative to the container */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #00ff00;
+  transform: translateX(-50%);
+  z-index: 0; /* Put it behind content */
+  min-height: calc(100vh - 150px); /* Ensure it's tall enough but not from the very top */
+}
+
+/* Add dotted line extension */
+.timeline-line::after {
+  content: '';
+  position: absolute; /* Position relative to the timeline line */
+  bottom: -100px; /* Position below the main line */
+  left: 0;
+  width: 4px;
+  height: 100px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #00ff00,
+    #00ff00 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  z-index: 0;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#projects-timeline {
+  position: relative;
+  width: 100%;
+}
+
+.timeline-node {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-date {
+  background-color: #00ff00;
+  color: #1e1e1e;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  z-index: 2;
+}
+
+.timeline-content {
+  width: 80%;
+  background-color: #111;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: 1; /* Ensure content is above the timeline line */
+}
+
+/* Project node styles */
+.project-preview {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.project-preview:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  margin-top: 15px;
+  border-top: 1px dashed #00ff00;
+  padding-top: 0;
+}
+
+.timeline-node.expanded .project-details {
+  max-height: 2000px; /* Arbitrary large value to allow expansion */
+  opacity: 1;
+  padding-top: 15px;
+}
+
+/* Timeline node positioning */
+.timeline-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Branch styles - removed */
+.timeline-branch {
+  display: none;
+}
+
+/* Markdown content styles */
+.markdown-content {
+  color: #c9c9c9;
+  line-height: 1.6;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  color: #00ff00;
+  margin: 15px 0 10px;
+}
+
+.markdown-content p {
+  margin-bottom: 10px;
+}
+
+.markdown-content a {
+  color: #FF00FF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.markdown-content a:hover {
+  color: #00cc00;
+}
+
+.markdown-content ul, 
+.markdown-content ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.markdown-content code {
+  background-color: #2a2a2a;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.markdown-content pre {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 30px;
+  }
+  
+  .timeline-line::after {
+    left: 30px;
+  }
+  
+  .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    margin-right: 0;
+  }
+  
+  .timeline-date {
+    align-self: flex-start;
+    margin-left: 60px;
+  }
+}

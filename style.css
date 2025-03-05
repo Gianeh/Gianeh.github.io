@@ -38,18 +38,30 @@ p, li {
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: nowrap;        /* Impedisce la rottura degli elementi su più righe */
+  flex-wrap: wrap;        /* Allow items to wrap to next line if needed */
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
-  /*overflow-x: auto;*/
 }
 
 @media (max-width: 600px) {
   nav ul {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    font-size: 0.9em; /* Opzionale: riduce la dimensione del testo */
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+  
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
   }
 }
 

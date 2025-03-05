@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Projects</title>
+  <link rel="stylesheet" href="projects.css">
+  
+  <!-- Include Marked.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="projects.js" defer></script>
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" class="clickable-header">
+      <h1>Pietro Pianigiani</h1>
+    </a>
+    <h2>Personal Projects Timeline</h2>
+    
+    <div class="project-controls">
+      <div class="filter-container">
+        <label for="project-type">Filter by Type:</label>
+        <select id="project-type" onchange="filterByType()">
+          <option value="">All Types</option>
+          <option value="web-development">Web Development</option>
+          <option value="ai-research">AI Research</option>
+          <option value="open-source">Open Source</option>
+        </select>
+      </div>
+      
+      <div class="filter-container">
+        <label for="project-tech">Filter by Technology:</label>
+        <select id="project-tech" onchange="filterByTechnology()">
+          <option value="">All Technologies</option>
+          <!-- Technologies will be populated dynamically -->
+        </select>
+      </div>
+      
+      <button id="reset-filters" onclick="resetFilters()">Reset Filters</button>
+    </div>
+  </header>
+
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+    
+    <!-- Projects will be dynamically loaded here -->
+    <div id="projects-timeline">
+      <!-- Example of a project node structure (will be created dynamically) -->
+      <!--
+      <div class="timeline-node">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <div class="project-preview">
+            <h3>Project Title</h3>
+            <p>Brief description of the project</p>
+            <div class="project-image">
+              <img src="path/to/image.jpg" alt="Project Image">
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="markdown-content" data-file="path/to/project.md"></div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <footer class="footer-above-timeline">
+    <p>Pietro Pianigiani, aka Gianeh</p>
+  </footer>
+</body>
+</html>

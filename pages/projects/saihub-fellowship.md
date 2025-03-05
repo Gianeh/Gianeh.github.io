@@ -1,0 +1,3 @@
+# Siena AI Hub  
+
+The SAIHub Foundation and its Fellowship program aim to recognize and support outstanding students in AI and Biotechnology. I was honored to be awarded **first place** among the **top 25 students** from these two fields. This achievement granted me a scholarship and the opportunity to participate in exclusive workshops and networking events focused on startups and career development.

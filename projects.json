@@ -1,0 +1,140 @@
+{
+    "projects": [
+        {
+            "id": "sorting-algorithms-visualization",
+            "title": "Sorting Algorithms Visualization",
+            "description": "Small University project on visualization of sorting algorithms",
+            "date": "06/2022 - 07/2022",
+            "markdown": "projects/sorting-algorithms-visualization.md",
+            "images": [
+                "https://github.com/Gianeh/SFML_Sorting_Visualization/raw/main/sorting_gif.gif"
+            ],
+            "technologies": [
+                "C++",
+                "SFML",
+                "multithreading"
+            ],
+            "type": "github",
+            "link": "https://github.com/Gianeh/SFML_Sorting_Visualization"
+        },
+        {
+            "id": "optical-character-recognition-perfection-via-super-resolution-techniques",
+            "title": "Optical Character Recognition Perfection via Super Resolution Techniques",
+            "description": "My bachelor thesis on convolutional networks capabilities to artificially increase resolution of images, thus increasing accuracy of OCR via ASTER, MORAN, etc.",
+            "date": "10/2023 - 12/2023",
+            "markdown": "projects/optical-character-recognition-perfection-via-super-resolution-techniques.md",
+            "images": [
+                "https://github.com/Gianeh/Bachelor_Thesis_Checkpoint/blob/master/tsrn_results.png?raw=true"
+            ],
+            "technologies": [
+                "Python",
+                "Machine Learning",
+                "Pytorch"
+            ],
+            "type": "research",
+            "link": ""
+        },
+        {
+            "id": "startup-internship-sengerio-srl",
+            "title": "Startup Internship - Sengerio srl",
+            "description": "Summer research internship at Sengerio srl in Siena.",
+            "date": "07/2022 - 09/2022",
+            "markdown": "projects/startup-internship-sengerio-srl.md",
+            "images": [
+                "https://www.sengerio.com/img/logos/sengerio_logo.svg"
+            ],
+            "technologies": [
+                "Python",
+                "Java",
+                "Drools"
+            ],
+            "type": "work_experience",
+            "link": ""
+        },
+        {
+            "id": "bigrafo-project",
+            "title": "Bigrafo Project",
+            "description": "Collaboration with University department to configure and install website backend for a digital library",
+            "date": "05/2024 - 09/2024",
+            "markdown": "projects/bigrafo-project.md",
+            "images": [
+                "https://digilet.unisi.it/files/asset/d367c275c8931716171800a44bead5da392fe92b.jpg"
+            ],
+            "technologies": [
+                "Apache",
+                "Ubuntu",
+                "php",
+                "MySQL"
+            ],
+            "type": "work_experience",
+            "link": "https://digilet.unisi.it/s/fortini/page/home"
+        },
+        {
+            "id": "saihub-fellowship",
+            "title": "SAIHub Fellowship",
+            "description": "Won a scholarship and became a SAIHub Fellow",
+            "date": "09/04/2024",
+            "markdown": "projects/saihub-fellowship.md",
+            "images": [
+                "https://fondazionesaihub.fondazionemps.it/fonds/wp-content/uploads/2023/07/logo-fs-1-4.png"
+            ],
+            "technologies": [],
+            "type": "honor",
+            "link": "https://fondazionesaihub.fondazionemps.it/en/"
+        },
+        {
+            "id": "genetic-algorithm-on-gpu-to-solve-tsp",
+            "title": "Genetic Algorithm on GPU to solve TSP",
+            "description": "A comparison of scalable performances of Genetic Algorithm in a parallel fashion to solve Traveling Salesman Problem",
+            "date": "12/2023 - 05/2024",
+            "markdown": "projects/genetic-algorithm-on-gpu-to-solve-tsp.md",
+            "images": [
+                "https://www.researchgate.net/publication/332715538/figure/fig3/AS:779408872853569@1562836964864/Parallel-genetic-algorithm-with-island-model.png"
+            ],
+            "technologies": [
+                "C",
+                "C++",
+                "Cuda",
+                "Python",
+                "multithreading",
+                "bash"
+            ],
+            "type": "github",
+            "link": "https://github.com/Gianeh/GeneticTSP/tree/main"
+        },
+        {
+            "id": "reinforcement-learning-plays-a-pac-man-game",
+            "title": "Reinforcement Learning Plays a Pac-man Game",
+            "description": "Deep Q-Learning, Q-Learning and Dynamic Programming algorithms tested in a simplified, handcrafted, Pac-man environment.",
+            "date": "12/2024 - 02/2025",
+            "markdown": "projects/reinforcement-learning-plays-a-pac-man-game.md",
+            "images": [
+                "https://github.com/Gianeh/auto-pac-man/raw/neural_rl/dql_demo.gif"
+            ],
+            "technologies": [
+                "Python",
+                "Pygame",
+                "Pytorch"
+            ],
+            "type": "github",
+            "link": "https://github.com/Gianeh/auto-pac-man"
+        },
+        {
+            "id": "hide-and-seek-but-2d",
+            "title": "Hide and Seek but 2D",
+            "description": "Ambitious project to demonstrate Adversarial Multi-Agent Reinforcement Learning in a 2D environment, mimicking OpenAI Hide and Seek famous demo",
+            "date": "12/2023 - 02/2024",
+            "markdown": "projects/hide-and-seek-but-2d.md",
+            "images": [
+                "https://github.com/Gianeh/Hide_and_Seek/blob/neural/hide_seek_demo.png?raw=true"
+            ],
+            "technologies": [
+                "Python",
+                "Pygame",
+                "Pytorch"
+            ],
+            "type": "github",
+            "link": "https://github.com/Gianeh/Hide_and_Seek/tree/neural"
+        }
+    ]
+}
