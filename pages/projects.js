@@ -13,6 +13,60 @@ async function loadProjects() {
   }
 }
 
+/**
+ * Parses a project date string.
+ * Accepts formats:
+ * - "dd/mm/yyyy"
+ * - "MM/YYYY" (assumes the first day of the month)
+ * - Intervals like "dd/mm/yyyy - dd/mm/yyyy" or "MM/YYYY - MM/YYYY" (uses the end date for sorting)
+ * @param {string} dateStr - The date string from the project.
+ * @returns {Date} The parsed Date object.
+ */
+function parseProjectDate(dateStr) {
+  // For intervals, take the end date
+  let effectiveDate = dateStr.includes(" - ") 
+    ? dateStr.split(" - ")[1].trim() 
+    : dateStr.trim();
+
+  // Patterns for "dd/mm/yyyy" and "MM/YYYY"
+  const ddmmyyyyPattern = /^(\d{2})\/(\d{2})\/(\d{4})$/;
+  const mmyyyyPattern = /^(\d{2})\/(\d{4})$/;
+
+  let match = effectiveDate.match(ddmmyyyyPattern);
+  let day, month, year;
+  
+  if (match) {
+    // Format: dd/mm/yyyy
+    day = parseInt(match[1], 10);
+    month = parseInt(match[2], 10);
+    year = parseInt(match[3], 10);
+  } else if ((match = effectiveDate.match(mmyyyyPattern))) {
+    // Format: MM/YYYY - assume day is 1
+    day = 1;
+    month = parseInt(match[1], 10);
+    year = parseInt(match[2], 10);
+  } else {
+    // Fallback to default Date parsing
+    return new Date(effectiveDate);
+  }
+  
+  // Return the Date object (months are 0-indexed)
+  return new Date(year, month - 1, day);
+}
+
+/**
+ * Sorts an array of projects by date (newest first).
+ * @param {Array} projects - Array of project objects, each having a "date" property.
+ * @returns {Array} Sorted array.
+ */
+function sortProjectsByDate(projects) {
+  return projects.sort((a, b) => {
+    const dateA = parseProjectDate(a.date);
+    const dateB = parseProjectDate(b.date);
+    return dateB - dateA;
+  });
+}
+
 // Function to initialize the timeline
 async function initializeTimeline() {
   const timelineContainer = document.getElementById('projects-timeline');
@@ -29,12 +83,8 @@ async function initializeTimeline() {
       return;
     }
     
-    // Sort projects by date (newest first)
-    projects.sort((a, b) => {
-      const dateA = new Date(a.date.split('/').reverse().join('-'));
-      const dateB = new Date(b.date.split('/').reverse().join('-'));
-      return dateB - dateA;
-    });
+    // Sort projects by date (newest first) using our helper function
+    sortProjectsByDate(projects);
     
     // Create and append project nodes
     projects.forEach(project => {
@@ -341,11 +391,7 @@ async function filterProjectsByType(type) {
   }
   
   // Sort projects by date (newest first)
-  filteredProjects.sort((a, b) => {
-    const dateA = new Date(a.date.split('/').reverse().join('-'));
-    const dateB = new Date(b.date.split('/').reverse().join('-'));
-    return dateB - dateA;
-  });
+  sortProjectsByDate(filteredProjects);
   
   filteredProjects.forEach(project => {
     const projectNode = createProjectNode(project);
@@ -369,11 +415,7 @@ async function filterProjectsByTechnology(tech) {
   }
   
   // Sort projects by date (newest first)
-  filteredProjects.sort((a, b) => {
-    const dateA = new Date(a.date.split('/').reverse().join('-'));
-    const dateB = new Date(b.date.split('/').reverse().join('-'));
-    return dateB - dateA;
-  });
+  sortProjectsByDate(filteredProjects);
   
   filteredProjects.forEach(project => {
     const projectNode = createProjectNode(project);
