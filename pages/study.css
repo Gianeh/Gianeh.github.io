@@ -29,6 +29,12 @@ header .subtitle {
   margin-bottom: 1em;
 }
 
+.clickable-header {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
 main {
   width: 100%;
   display: flex;
