@@ -1,0 +1,3 @@
+# Golden Hour AI - my startup!
+
+Around the start of the University year 2024/2025 I've had the opportunity to collaborate with my old Highschool to organize a CS extracurricular course. Through this contact, I've met my current co-founder and CEO of our newborn startup, [Simone](https://www.linkedin.com/in/s-mattera). From his idea to renew hospitality customer care infrastructures using LLM agents, we created Golden Hour AI and our (and mine as CTO) journey has just started!

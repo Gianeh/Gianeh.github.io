@@ -169,6 +169,85 @@
             ],
             "type": "work_experience",
             "link": ""
+        },
+        {
+            "id": "scooterrally-toscano-it-and-organization-2025",
+            "title": "Scooterrally Toscano IT and Organization - 2025",
+            "description": "For the second consecutive year, I've had the opportunity to work again behind the scenes of this majestic event:\nImplemented Full-Stack sale and booking process for European level event. Acquired leads and payments, handled discounts and colaboration with a ferries, automated email parsing and follow up.",
+            "date": "01/01/2025 - 05/05/2025",
+            "markdown": "projects/scooterrally-toscano-it-and-organization-2025.md",
+            "images": [],
+            "technologies": [
+                "PHP",
+                "Javascript",
+                "HTML",
+                "CSS",
+                "Automation"
+            ],
+            "type": "work_experience",
+            "link": ""
+        },
+        {
+            "id": "golden-hour-ai-my-startup",
+            "title": "Golden Hour AI - my startup!",
+            "description": "Around the start of the University year 2024/2025 I've had the opportunity to collaborate with my old Highschool to organize a CS extracurricular course. Through this contact, I've met my current co-founder and CEO of our newborn startup, [Simone](https://www.linkedin.com/in/s-mattera). From his idea to renew hospitality customer care infrastructures using LLM agents, we created Golden Hour AI and our (and mine as CTO) journey has just started!",
+            "date": "10/2024 - Ongoing",
+            "markdown": "projects/golden-hour-ai-my-startup.md",
+            "images": [
+                "https://assets.zyrosite.com/cdn-cgi/image/format=auto",
+                "w=100",
+                "fit=crop",
+                "q=95/m6Lw8Nk5BjhnO4Nd/logo2-AVLpDLnbg0s46QKD.png"
+            ],
+            "technologies": [
+                "Python",
+                "Javascript",
+                "PHP",
+                "HTML",
+                "Project Management",
+                "Voiceflow",
+                "Make.com",
+                "LLM"
+            ],
+            "type": "work_experience",
+            "link": "https://goldenhour-ai.com/"
+        },
+        {
+            "id": "borsa-di-ricerca-research-assignment-from-my-university",
+            "title": "\"Borsa di Ricerca\" - Research assignment from my University",
+            "description": "",
+            "date": "05/2025 - 11/2025",
+            "markdown": "projects/borsa-di-ricerca-research-assignment-from-my-university.md",
+            "images": [
+                "https://tuscanyhealthecosystem.it/wp-content/uploads/2024/08/Thuscany-Health-Ecosystem-Logo-W@2x.png"
+            ],
+            "technologies": [
+                "Python",
+                "Project Management",
+                "HTML",
+                "Javascript",
+                "CSS"
+            ],
+            "type": "research",
+            "link": "https://tuscanyhealthecosystem.it/en/"
+        },
+        {
+            "id": "research-engineering-at-barcelona-super-computing-center",
+            "title": "Research Engineering at Barcelona Super Computing Center",
+            "description": "Since the 1st of June 2025, I'm a fully enrolled and committed Research Engineer at the BSC of Barcelona. I'll be workin here at least for 6 months to produce a master thesis work. I moved to Barcelona to join this rich ecosystem, do not hesitate to connect to discuss opportunities or grab a coffe.",
+            "date": "29/06/2025",
+            "markdown": "projects/research-engineering-at-barcelona-super-computing-center.md",
+            "images": [
+                "https://www.bsc.es/sites/default/files/public/BSC-20y.svg"
+            ],
+            "technologies": [
+                "C",
+                "C++",
+                "Gem5",
+                "RISC-V"
+            ],
+            "type": "work_experience",
+            "link": "https://www.bsc.es/es/pianigiani-pietro"
         }
     ]
 }
