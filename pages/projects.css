@@ -415,3 +415,35 @@ footer {
     margin-left: 60px;
   }
 }
+
+/* Improved mobile timeline layout */
+@media (max-width: 600px) {
+  .timeline-line,
+  .timeline-line::after {
+    display: none !important;
+  }
+  .timeline-container,
+  #projects-timeline,
+  .timeline-node,
+  .timeline-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+  }
+  .timeline-node {
+    align-items: stretch !important;
+    margin-bottom: 30px !important;
+  }
+  .timeline-date {
+    display: block !important;
+    margin: 0 auto 10px auto !important;
+    align-self: center !important;
+    text-align: center !important;
+    float: none !important;
+  }
+  .timeline-content {
+    padding: 10px !important;
+  }
+}
