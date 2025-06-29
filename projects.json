@@ -176,7 +176,9 @@
             "description": "For the second consecutive year, I've had the opportunity to work again behind the scenes of this majestic event:\nImplemented Full-Stack sale and booking process for European level event. Acquired leads and payments, handled discounts and colaboration with a ferries, automated email parsing and follow up.",
             "date": "01/01/2025 - 05/05/2025",
             "markdown": "projects/scooterrally-toscano-it-and-organization-2025.md",
-            "images": [],
+            "images": [
+                "https://www.scooterrallytoscano.it/imgs/header_desktop.png"
+            ],
             "technologies": [
                 "PHP",
                 "Javascript",
@@ -194,10 +196,7 @@
             "date": "10/2024 - Ongoing",
             "markdown": "projects/golden-hour-ai-my-startup.md",
             "images": [
-                "https://assets.zyrosite.com/cdn-cgi/image/format=auto",
-                "w=100",
-                "fit=crop",
-                "q=95/m6Lw8Nk5BjhnO4Nd/logo2-AVLpDLnbg0s46QKD.png"
+                "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=100,fit=crop,q=95/m6Lw8Nk5BjhnO4Nd/logo2-AVLpDLnbg0s46QKD.png"
             ],
             "technologies": [
                 "Python",
@@ -235,10 +234,10 @@
             "id": "research-engineering-at-barcelona-super-computing-center",
             "title": "Research Engineering at Barcelona Super Computing Center",
             "description": "Since the 1st of June 2025, I'm a fully enrolled and committed Research Engineer at the BSC of Barcelona. I'll be workin here at least for 6 months to produce a master thesis work. I moved to Barcelona to join this rich ecosystem, do not hesitate to connect to discuss opportunities or grab a coffe.",
-            "date": "29/06/2025",
+            "date": "01/06/2025 - Ongoing",
             "markdown": "projects/research-engineering-at-barcelona-super-computing-center.md",
             "images": [
-                "https://www.bsc.es/sites/default/files/public/BSC-20y.svg"
+                "https://www.bsc.es/sites/default/files/public/bscw2/content/project/logos/CN042700-logobsc_pwl_3472.png"
             ],
             "technologies": [
                 "C",
